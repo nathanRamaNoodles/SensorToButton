@@ -30,7 +30,7 @@ SensorToButton pingToButton(10, pressDown, 100);//  threshold is 10 cm,   Are bi
 #define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
-const int led = 13;
+const int led = LED_BUILTIN;
 void setup() {
   Serial.begin(9600); // Open serial monitor at 115200 baud to see ping results.
   pinMode(led, OUTPUT);
