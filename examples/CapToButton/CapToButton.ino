@@ -26,7 +26,7 @@ SOFTWARE.
 CapacitiveSensor myCap = CapacitiveSensor(A0, A1);       // 1M resistor between pins A0 & A1, pin A1 is sensor pin, add a wire and or foil if desired
 SensorToButton capToButton(2000, pressUp, 50);//  threshold,   Are bigger values than threshold mean Press?(true or false), debounce Time(usually 50 ms).
 //pressUp means that the values bigger than your threshold mean the "Sensor" is in the on position, pressDown is vias versa.
-const int led = 13;
+const int led = LED_BUILTIN;
 void setup()
 {
   //myCap.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1 - just as an example
