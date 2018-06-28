@@ -25,7 +25,7 @@ SOFTWARE.
 const int buttonPin = 8;
 SensorToButton simpleButton(buttonPin, 50); //  button pin, debounce Time(usually 50 ms).
 
-const int led = 13;
+const int led = LED_BUILTIN;
 void setup()
 {
   pinMode(led, OUTPUT);
