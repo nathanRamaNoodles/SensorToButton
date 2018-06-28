@@ -1,5 +1,5 @@
 # SensorToButton Arduino Library
-This library is meant to eradicate repitiveness in sensor data and buttons.  [Look here to see what I'm talking about](https://github.com/nathanRamaNoodles/SensorToButton#an-example).
+This library is meant to eradicate repetitiveness in sensor data and buttons.  [Look here to see what I'm talking about](https://github.com/nathanRamaNoodles/SensorToButton#an-example).
 I was inspired by [Jack Christensen's Button Library](https://github.com/JChristensen/JC_Button).
 This library is using this [similar techinque](https://www.arduino.cc/en/Tutorial/StateChangeDetection).
 It works for all microcontrollers under the Arduino IDE.
