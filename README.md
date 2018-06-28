@@ -36,11 +36,13 @@ This library works for all microcontrollers under the Arduino IDE.
       Bye
       Bye
       Bye
-      ... //Goes for infinity```
+      ... //Goes for infinity
+      ```
   + This is what it looks like **with** the library.
       ```
       Hi
-      Bye```
+      Bye
+      ```
       + It does exactly what you think it does :D
 ---
 
@@ -58,7 +60,8 @@ void read();        //Put this in loop()
 bool isPressed();   //Used when threshold is reached
 
 bool wasPressed();  //Used when threshold was reached once.
-bool wasReleased(); //Used when threshold was left once.```
+bool wasReleased(); //Used when threshold was left once.
+```
 
 + Note that wasPressed() is not the same as isPressed().
 + **pressUp** means that **bigger** values than your threshold mean the "Button" is pressed.
