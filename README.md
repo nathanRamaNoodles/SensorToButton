@@ -1,10 +1,11 @@
 # SensorToButton Arduino Library
 [![arduino-library-badge](https://www.ardu-badge.com/badge/SensorToButton.svg)](https://www.ardu-badge.com/SensorToButton)
 
-An Arduino Library to make any data(from a sensor or Button) act like a Button.  By Button I mean two seperate states; "on" and "off".
+This library is meant to eradicate repetitiveness in sensor data and buttons.  [Look here to see what I'm talking about](https://github.com/nathanRamaNoodles/SensorToButton#an-example).
+
 I was inspired by [Jack Christensen's Button Library](https://github.com/JChristensen/JC_Button).
 This library is using this [similar techinque](https://www.arduino.cc/en/Tutorial/StateChangeDetection).
-This library works for all microcontrollers under the Arduino IDE.
+It works for all microcontrollers under the Arduino IDE.
 
 ---
 ## Why?
