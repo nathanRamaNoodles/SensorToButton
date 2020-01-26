@@ -24,6 +24,7 @@ void SensorToButton::debounceIt(uint16_t r){
   changed = defaultTo;     //true for isWasPressed(), false for isWasReleased()
   if (r >= myThreshold) {
     state = myDir;
+    heldTime = millis();
   }
   else {
     state = !myDir;
@@ -45,4 +46,11 @@ bool SensorToButton::wasPressed() {
 }
 bool SensorToButton::wasReleased() {
   return !changed && !state && !pState;  //weird combo, but I don't care.  It works like a charm :D
+}
+bool SensorToButton::wasHeldFor(uint32_t held_time){
+  if (!wasReleased() && (millis() - heldTime>=held_time)) {
+    // heldTime = millis();
+    return true;
+  }
+  return false;
 }

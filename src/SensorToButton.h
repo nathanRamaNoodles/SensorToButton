@@ -21,6 +21,7 @@ public:
   bool isPressed();
   bool wasPressed();
   bool wasReleased();
+  bool wasHeldFor(uint32_t held_time);
 
 private:
   void debounceIt(uint16_t r);
@@ -28,6 +29,6 @@ private:
   uint8_t _pin;
   bool pState,state,changed, myDir;
   bool defaultTo=true;
-  uint32_t pM = 0;
+  uint32_t pM = 0, heldTime = 0;
 };
 #endif
